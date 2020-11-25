@@ -1,4 +1,4 @@
- 
+
 /**
  * Demo Styles
  */
@@ -19,7 +19,7 @@ body {
   margin: 0;
   padding-bottom: 6rem;
   min-height: 100%;
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: "Helvetica Neue";
 }
 
 .demo {
@@ -38,13 +38,23 @@ body {
  */
 
 .footer {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-  background-color: #efefef;
-  text-align: center;
+  position: relative;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	background-color: white;
+	color: black;
+	text-align: center;
+}
+
+.hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 40pt;
+  margin-right: 40pt;
+  border-style: inset;
+  border-width: 2px;
 }
 
 .menubar li a {
@@ -61,7 +71,7 @@ body {
 nav {
     margin-left: auto;
     margin-right: auto;
-    font-size: larger;
+    font-size: 25px;
     text-align: center;
 }
 
@@ -69,16 +79,18 @@ nav {
 .menubar li {
 	display: block;
 	float: left;
-	width: 100px;
+	width: 150px;
     min-height: 1.5em;
-    background: #222;
-    border: #444 solid 2px;
+    background: white;
+    border: lightgrey solid 1px;
     padding: 3px;
     margin: 4px;
+        text-align: center;
+
 }
 
 .menubar li:hover {
-    background: #000;
+    background: white;
 }
 
 .menubar li ul {
@@ -97,5 +109,24 @@ nav {
     float: none;
     position: relative;
     width: 150px;
-    text-align: left;
+    text-align: center;
+}
+
+ul {
+  text-align: left;
+  list-style: inside;
+  margin-left: 50pt;
+  margin-right: auto;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
