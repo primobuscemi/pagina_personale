@@ -120,11 +120,10 @@ ul {
 }
 
 .column1 {
-    width: 80%;
-    height: 450px;
+   
     margin: 30px;
     float: left;
-    width: 48%;
+    width: 45%;
 }
 .column2 {
   float: right;
