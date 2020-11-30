@@ -122,10 +122,10 @@ nav {
 .column1 {
    
     float: left;
-    width: 48%;
+    width: 100%;
 
 
-.column2 {
+/*.column2 {
   float: right;
   width:48%;
  
@@ -133,7 +133,7 @@ nav {
 
 
 /* Clear floats after the columns */
-.row:after {
+/*.row:after {
   content: "";
   display: table;
   clear: both;
